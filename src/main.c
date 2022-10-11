@@ -1,11 +1,10 @@
 #include <stm8s_gpio.h>
-#include <string.h>
 #include <stm8s_tim2.h>
-#include "stm8s_clk.h"
-#include "stm8s_uart1.h"
-#include "stm8s_exti.h"
-#include "stm8s_adc1.h"
-#include "stm8s_flash.h"
+#include <stm8s_clk.h>
+#include <stm8s_uart1.h>
+#include <stm8s_exti.h>
+#include <stm8s_adc1.h>
+#include <stm8s_flash.h>
 #include "time.h"
 #include "motor.h"
 #include "config.h"
@@ -23,7 +22,6 @@ typedef enum {
 uint16_t light_brightness;
 State state = INIT;
 uint32_t lightStart;
-// interactive config
 
 void CLK_Config();
 void GPIO_Config();
